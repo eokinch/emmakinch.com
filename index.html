@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- base code for hamburger nav: https://codepen.io/nickcil/pen/pvPQJK -->
+	<!-- photo of me: taken by Pam Lau -->
+	<!-- pepper background image: https://i.pinimg.com/736x/48/43/13/4843136d8ce297549948a3ab6891c330--fresh-salsa-chilli-plant.jpg -->
+	<!-- wooden table background image: https://themarketingtechnologist-ghost.s3.amazonaws.com/2017/Jan/newheader-1484218261031.jpg -->
+	<!-- news paper background: https://image1.masterfile.com/getImage/NDAwLTA2Mzk2MzYwZW4uMDAwMDAwMDA=AGzWBb/400-06396360en_Masterfile.jpg -->
+	<!-- theatre seats image: https://unsplash.com/search/photos/theatre-seats?photo=evlkOfkQ5rE -->
+
 	<meta charset="UTF-8">
 	<title>Emma Kinch - Web Developer</title>
 	<link rel="stylesheet" href="public/styles/style.css">
@@ -20,11 +27,10 @@
 			</div>
 			<nav> 
 				<ul class="header-nav mobile-display clearfix">
-					<li><a href="#index.html">home</a></li>
-					<li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#blog">blog</a></li>
-					<li><a href="#about">about</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li><a href="#index.html" class="smoothScroll">home</a></li>
+					<li><a href="#portfolio" class="smoothScroll">portfolio</a></li>
+					<li><a href="#about" class="smoothScroll">about</a></li>
+					<li><a href="#contact" class="smoothScroll">contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -51,6 +57,7 @@
 									<li>Css/SASS</li>
 								</ul>
 								<a href="https://eokinch.github.io/project-2/" target="_blank">Live View</a>
+								<a href="https://github.com/eokinch/project-2" target="_blank">View Code</a>
 							</div>
 						</div>
 					</div>
@@ -62,7 +69,7 @@
 						</div>
 						<div class="portfolio-description">
 							<div class="portfolio-description_title clearfix">
-								<h4>JavaScript<span>with a api</span></h4>
+								<h4>JavaScript<span>with an api</span></h4>
 								<img src="assets/project4-square.jpg" alt="">
 							</div>
 							<div class="portfolio-info">
@@ -75,11 +82,12 @@
 									<li>SCSS</li>
 								</ul>
 								<a href="https://eokinch.github.io/Project-4/" target="_blank">Live View</a>
+								<a href="https://github.com/eokinch/Project-4" target="_blank">View Code</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="portfolio-peice wrapper">
+				<div class="portfolio-peice">
 					<div class="portfolio-peice_content wrapper clearfix">
 						<div class="portfolio-image">
 							<img src="assets/project5.jpg" alt="">
@@ -101,7 +109,8 @@
 									<li>HTML5</li>
 									<li>SCSS</li>
 								</ul>
-								<a href="https://sfwotters.github.io/TSFW/" target='_blank'>Live View</a>
+								<a href="https://eokinch.github.io/project-5/" target='_blank'>Live View</a>
+								<a href="https://github.com/eokinch/project-5" target="_blank">View Code</a>
 							</div>
 						</div>
 					</div>
@@ -117,7 +126,7 @@
 								<img src="assets/project6-square.jpg" alt="">
 							</div>
 							<div class="portfolio-info">
-								<p>Are you like me and a lover of the Toronto International Film Festival? Use "TIFF Organizer" to make the entire planning process that much easier! Browse all the films at the festival and save the showtimes that work for you to your indivdualized list. During The festival data is pulled from the Ticketmaster API.</p>
+								<p>Are you like me and a lover of the Toronto International Film Festival? Use "TIFF Organizer" to make the entire planning process that much easier! Browse all the films at the festival and save the showtimes that work for you to your indivdualized list. During the festival data is pulled from the Ticketmaster API.</p>
 								<h5>Built With:</h5>
 								<ul class="clearfix">
 									<li>React</li>
@@ -125,14 +134,15 @@
 									<li>SCSS</li>
 								</ul>
 								<a href="https://festivalorganizer-5125e.firebaseapp.com/" target='_blank'>Live View</a>
+								<a href="https://github.com/eokinch/react-project" target="_blank">View Code</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="about" class="about">
-			<div class="wrapper about-content">
+		<section id="about" class="about ">
+			<div class="about-content wrapper">
 				<h3>about</h3>
 				<div class="about-info">
 					<div class="about-info_image">
@@ -141,14 +151,14 @@
 					<div class="about-info_copy">
 						<p>Hi I'm Emma,</p>
 						<p>A toronto based web developer.</p>
-						<p>I love making websites with users in mind! I aim to make clean, clear and intuitive sites, backed by soild code. I'm a recent graduate of HackerYou's Bootcamp.</p>
-						<p>My previous work in retail on both customer service and  mercandising teams, I've gained communication skills with both co-workers and clients.</p>
+						<p>My goal is is to create clean, clear, and intuitive websites that deliver a positive user experience. As a recent graduate of HackerYou's coding boot camp you can have the confidence knowing that that my work is built using the latest technologies and coding best-practices in the industry.</p>
+						<p>My past work experiences in retail have provided me with valuable skills. I have learned strong written and oral communication as well as a positive work-ethic. These skills allow me to not only deliver great code, but always communicate effectively with both my team-members or clients alike.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="contact" class="contact-section">
-			<div class="wrapper contact">
+			<div class="contact wrapper">
 				<h3>Get In <span>Touch</span></h3>
 				<div class="contact-content">
 					<div class="contact-info clearfix">
@@ -158,9 +168,9 @@
 						</div>
 						<div class="contact-info_email">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							<p class="email">eokinch@gmail.com</p>
+							<p class="email">emma@emmakinch.com</p>
 						</div>
-						<ul class="contact-info_socials"> <!-- icons -->
+						<ul class="contact-info_socials"> 
 							<li><a href="https://www.linkedin.com/in/emma-kinch-822b53145/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://twitter.com/EmmaOKinch"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/eokinch"><i class="fa fa-github" aria-hidden="true"></i></a></li>

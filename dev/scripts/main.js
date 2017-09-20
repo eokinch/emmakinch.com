@@ -22,21 +22,26 @@ const navFunction = function() {
 		}
 	}
 
+
 	navItem.on('click', function(){
 		closeNav();
-	})
-
-	navIcon.on('mouseenter', function(){
-		openNav();
 	});
 
 	navIcon.on('click', function(){
 		toggleNav();
 	});
 
+	if(window.innerWidth > 768) {
+	    navIcon.on('mouseenter', function() {
+	        openNav();
+	    });
+	}
+
 	nav.on('mouseleave', function(){
-		closeNav();
+	    closeNav();
 	});
+
+	
 
 	window.onscroll = function() {
 		closeNav();
@@ -45,4 +50,10 @@ const navFunction = function() {
 
 $(function(){
 	navFunction();
+	$('a').click(function(){
+	     $('html, body').animate({
+	         scrollTop: $( $(this).attr('href') ).offset().top
+	     }, 2500);
+	     return false;
+ 	});
 });
