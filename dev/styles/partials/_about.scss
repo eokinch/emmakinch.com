@@ -23,6 +23,9 @@
 		span {
 			color: $black;
 		}
+		@media screen and (max-width: 439px) {
+				font-size: 2.5rem;
+			}
 	}	
 }
 .about-info {
@@ -193,6 +196,21 @@
 			font-size: 0.9rem;
 		}
 	}
+}
+
+@media screen and (max-width: 439px) {
+		.about-content h3 {
+			font-size: 2.5rem;
+		}
+				
+}
+
+@media screen and (max-width: 420px) {
+	.about-info_copy {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+				
 }
 
 
