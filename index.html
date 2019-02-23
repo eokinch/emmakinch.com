@@ -11,24 +11,28 @@
 	<meta charset="UTF-8">
 	<title>Emma Kinch - Web Developer</title>
 	<link rel="stylesheet" href="public/styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,600,700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://use.fontawesome.com/2d32676acd.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 	<header>
 		<div class="wrapper header-content">
 			<div class="mobile-nav">
-				<i class="fa fa-bars" aria-hidden="true"></i>
+				<div class="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<p>Menu</p>
 			</div>
 			<div class="header-title">
 				<h1>Emma Kinch</h1>
-				<h2>Web Developer</h2>
+				<h2>Front-end Developer</h2>
 			</div>
 			<nav> 
 				<ul class="header-nav mobile-display clearfix">
-					<li><a href="#index.html" class="smoothScroll">home</a></li>
-					<li><a href="#portfolio" class="smoothScroll">portfolio</a></li>
+					<li><a href="/" class="smoothScroll">home</a></li>
 					<li><a href="#about" class="smoothScroll">about</a></li>
 					<li><a href="#contact" class="smoothScroll">contact</a></li>
 				</ul>
@@ -36,172 +40,26 @@
 		</div>
 	</header>
 	<main>
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-content">
-				<h3 class="wrapper">portfolio</h3>
-				<div class="portfolio-peice ">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/project6.jpg" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>react<span>& firebase</span></h4>
-								<img src="assets/project6-square.jpg" alt="">
-							</div>
-							<div class="portfolio-info">
-								<p>"TIFF Organizer" is an app built entirely with React to make the planning process for the Toronto International Film Festival that much easier! During the festival data is pulled from the Ticketmaster API, afterwards it comes in from Firebase.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>React</li>
-									<li>Firebase</li>
-									<li>SCSS</li>
-								</ul>
-								<a href="https://festivalorganizer-5125e.firebaseapp.com/" target='_blank'>Live View</a>
-								<a href="https://github.com/eokinch/react-project" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-peice ">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/marvel-project.jpg" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>JavaScrcipt<span>& API Data</span></h4>
-								<img src="assets/marvel-project-square.jpg" alt="">
-							</div>
-							<div class="portfolio-info">
-								<p>Used the Marvel API and a personal database. Built to pull in three random characters to test just how much of a Marvel fan the user really is.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>JQUERY</li>
-									<li>Javascript</li>
-									<li>Firebase</li>
-									<li>HTML5</li>
-									<li>SCSS</li>
-								</ul>
-								<a href="http://kidsxtech.com/" target='_blank'>Live View</a>
-								<a href="https://github.com/eokinch/kids-x-tech-splash-page" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-peice ">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/kidsxtech.png" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>Freelance<span>HTML & CSS</span></h4>
-								<img src="assets/kidsxtech-square.png" alt="">
-							</div>
-							<div class="portfolio-info">
-								<p>Designed and Developed the Kids X Tech website. Built using HTML and SCSS/CSS for a clean and responsive website. Also included an intergrated MailChimp registration form.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>HTML5</li>
-									<li>CSS3</li>
-								</ul>
-								<a href="http://kidsxtech.com/" target='_blank'>Live View</a>
-								<a href="https://github.com/eokinch/kids-x-tech-splash-page" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-peice">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/project4.jpg" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>JavaScrcipt<span>& API Data</span></h4>
-								<img src="assets/project4-square.jpg" alt="">
-							</div>
-							<div class="portfolio-info">
-								<p>"The News Today" is a JavaScript & JQuery built website that makes it easier than ever to get all you news in one place. All the data is gathered by using The News API.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>JQUERY</li>
-									<li>Javascript</li>
-									<li>HTML5</li>
-									<li>SCSS</li>
-								</ul>
-								<a href="https://eokinch.github.io/Project-4/" target="_blank">Live View</a>
-								<a href="https://github.com/eokinch/Project-4" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-peice">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/project5.jpg" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>JavaScript<span>& API Data</span></h4>
-								<img src="assets/project5-square.jpg" alt="">
-							</div>
-
-							<div class="portfolio-info">
-								<p>"Too Spicy For Work" is a collabrative JavaScript & JQuery project that allows the end user to select a playlist that's appropriate for them and their co-workers. The playlists within the site are pulled in from Spotify using their API.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>JQUERY</li>
-									<li>Javascript</li>
-									<li>Github</li>
-									<li>Gulp</li>
-									<li>HTML5</li>
-									<li>SCSS</li>
-								</ul>
-								<a href="https://eokinch.github.io/project-5/" target='_blank'>Live View</a>
-								<a href="https://github.com/eokinch/project-5" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-peice">
-					<div class="portfolio-peice_content wrapper clearfix">
-						<div class="portfolio-image">
-							<img src="assets/project2.jpg" alt="">
-						</div>
-						<div class="portfolio-description">
-							<div class="portfolio-description_title clearfix">
-								<h4>responsive<span>design</span></h4>
-								<img src="assets/project2-square.jpg" alt="">
-							</div>
-							<div class="portfolio-info">
-							<p>A single page fully responsive PSD conversion.</p>
-								<h5>Built With:</h5>
-								<ul class="clearfix">
-									<li>HTML5</li>
-									<li>Css/SASS</li>
-								</ul>
-								<a href="https://eokinch.github.io/project-2/" target="_blank">Live View</a>
-								<a href="https://github.com/eokinch/project-2" target="_blank">View Code</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section id="about" class="about ">
 			<div class="about-content wrapper">
-				<h3>about</h3>
+				<h3>about <span>me</span></h3>
 				<div class="about-info">
 					<div class="about-info_image">
 						<img src="assets/emma.jpg" alt="Head shot of Emma Kinch">
 					</div>
 					<div class="about-info_copy">
-						<p>Hi I'm Emma,</p>
-						<p>A toronto based web developer.</p>
-						<p>My goal is to create clean, clear, and intuitive websites that deliver a positive user experience. As a recent graduate of HackerYou's Bootcamp you can have confidence knowing that my work is built using the latest technologies and coding best-practices in the industry.</p>
-						<p>My past work experiences in a fast-paced retail enviroment in both customer service and merchandising have provided me with valuable skills. I have strong written and oral communication as well as a can-do positive work-ethic. These skills allow me to not only deliver great code, but also communicate effectively with both my team-members and clients alike.</p>
+						<h4>Hey, thanks for stopping by!</h4>
+						<h5>I'm Emma!</h5>
+						<p>I'm currently a Front-End Developer at <a href="https://www.uberflip.com/" target="_blank">Uberflip</a> in Toronto, ON. I lead a team of 6 other developers who work together to customize our product for our customer's growing and changing needs.</p>
+						<p>When it comes to code I am passionate about all things front-end. But as a very visual person a large chunk of my heart belongs to CSS (& SCSS), and the power it has to make or break user experiences.</p>
+						<p>When I'm away from the office you can usually find me doing one of the following:
+						<ul>
+							<li>Watching a new (or old) film. <p><sup>**</sup>Seriousily I watch too many movies.</p></li>
+							<li>Planning my next adventure. <p><sup>**</sup>Ask me about my recent trip to Japan!</p></li>
+							<li>Hanging out with my dog Lily. <p><sup>**</sup>You can check her out on <a href="https://www.instagram.com/lilyinthesix/" target="_blank">Instagram</a>.</p></li>
+						</ul>
+
+						</p>
 					</div>
 				</div>
 			</div>
@@ -211,27 +69,24 @@
 				<h3>Get In <span>Touch</span></h3>
 				<div class="contact-content">
 					<div class="contact-info clearfix">
-						<div class="contact-info_phone">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<a href="tel:4167684830">(416)-768-4830</a>
+						<div class="contact-info_contactLinks"> 
+							<a class="phone" href="tel:4167684830">(416)-768-4830</a>
+							<a class="email" href="mailto:emma@emmakinch.com">emma@emmakinch.com</a>
+							<a class="resume" href="assets/Emma-Kinch-Resume.pdf" target="_blank">See my Resume</a>
 						</div>
-						<div class="contact-info_email">
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							<p class="email">emma@emmakinch.com</p>
+					
+						<div class="contact-info_socialLinks"> 
+							<a class="linkedin" href="https://www.linkedin.com/in/emma-kinch-822b53145/" target="_blank">LinkedIn</a>
+							<a class="github" href="https://github.com/eokinch" target="_blank">GitHub</a>
 						</div>
-						<ul class="contact-info_socials"> 
-							<li><a href="https://www.linkedin.com/in/emma-kinch-822b53145/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="https://twitter.com/EmmaOKinch"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/eokinch"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						</ul>
 					</div>
 					<form method='POST' action="https://formspree.io/eokinch@gmail.com" class="contact-form">
 						<label for="name" class="SRT">Your Name</label>
-						<input type="text" placeholder="Name" name="name">
+						<input type="text" placeholder="Name" name="name" required>
 						<label for="email" class="SRT">Your Email</label>
-						<input type="email" placeholder="Email" name="email">
+						<input type="email" placeholder="Email" name="email" required>
 						<label for="message-content" class="SRT">Your Message Here...</label>
-						<textarea name='message-content' id="contact-text" cols="1" rows="1" placeholder="Your message here..."></textarea>
+						<textarea name='message-content' id="contact-text" cols="1" rows="1" placeholder="Your message here..." required></textarea>
 						<button>Submit</button>
 					</form>
 				</div>
@@ -240,12 +95,8 @@
 	</main>
 	<footer>
 		<div class="wrapper">
-			<ul> 
-				<li><a href="https://www.linkedin.com/in/emma-kinch-822b53145/">linkedin</a></li>
-				<li><a href="https://twitter.com/EmmaOKinch">twitter</a></li>
-				<li><a href="https://github.com/eokinch">github</a></li>
-			</ul>
-			<p>emma kinch copyright 2017</p>
+			
+			<p>emma kinch copyright 2019</p>
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -20,6 +20,9 @@
 		color: $dark-pink;
 		text-transform: uppercase;
 		padding: 40px 0 0 40px;
+		span {
+			color: $black;
+		}
 	}	
 }
 .about-info {
@@ -43,25 +46,54 @@
 	width: 50%;
 	padding-top: 30px;
 	padding-right: 40px;
-	p:first-child {
+	h4, h5 {
+		font-weight: 500;
+	}
+	h4 {
 		text-transform: uppercase;
 		font-size: 1.7rem;
 		letter-spacing: 1px;
 		padding-bottom: 5px;
 		color: $dark-pink;
 	}
-	p:nth-of-type(2){
+	h5{
 		text-transform: uppercase;
-		padding-bottom: 20px;
 		font-size: 1.5rem;
-	}
-	p:nth-of-type(3){
 		padding-bottom: 20px;
 	}
+	
 	p {
-		font-size: 1.3rem;
-		line-height: 30px;
+		padding-bottom: 20px;
+		font-size: 1.2rem;
+		line-height: 1.2;
 	}
+	p:nth-of-type(3) {
+			padding-bottom: 10px;
+		}
+	ul {
+		li {
+			font-size: 1.1rem;
+			line-height: 1.1;
+			p, a {
+				font-size: 0.8rem;
+				font-style: italic;
+			}
+			p {
+				padding-left: 30px;
+				padding-bottom: 5px;
+			}
+			p sup {
+				color: $dark-pink;
+			}
+			&:before {
+				content: '\00B7';
+				color: $dark-pink;
+				font-size: 1.5rem;
+				margin: 0 10px;
+			}
+		}
+	}
+	
 }
 
 @media screen and (max-width: 1170px){
@@ -80,20 +112,33 @@
 	.about-info_copy {
 		padding-top: 25px;
 		padding-right: 25px;
-		p:first-child {
+		h4 {
 			font-size: 1.6rem;
 		}
-		p:nth-of-type(2){
-			padding-bottom: 10px;
+		h4{
 			font-size: 1.4rem;
-		}
-		p:nth-of-type(3){
 			padding-bottom: 10px;
 		}
+		
 		p {
-			font-size: 1.2rem;
-			line-height: 25px;
+			padding-bottom: 10px;
+			font-size: 1.1rem;
+			line-height: 1.1;
 		}
+		p:nth-of-type(3) {
+			padding-bottom: 5px;
+		}
+		ul {
+		
+		li {
+			font-size: 1rem;
+			line-height: 1;
+			p, a {
+				font-size: 0.7rem;
+				font-style: italic;
+			}
+		}
+	}
 	}
 	
 }
@@ -110,10 +155,10 @@
 	.about-info_copy {
 		padding-top: 20px;
 		padding-right: 20px;
-		p:first-child {
+		h4 {
 			font-size: 1.4rem;
 		}
-		p:nth-of-type(2){
+		h5 {
 			font-size: 1.2rem;
 		}
 		p {
@@ -138,10 +183,10 @@
 	.about-info_copy {
 		width: 100%;
 		padding-left: 40px;
-		p:first-child {
+		h4 {
 			font-size: 1.3rem;
 		}
-		p:nth-of-type(2){
+		h5{
 			font-size: 1.1rem;
 		}
 		p {

@@ -1,208 +1,196 @@
 .contact-section {
 	background: $light-pink;
 	padding-top: 50px;
-}
-
-.contact {
-	border-top: 4px solid $dark-pink;
-	position: relative;
-	padding-bottom: 100px;
-	min-width: 85%;
-	&:before {
-		content: '';
-		position: absolute;
-		background: $dark-pink;
-		right: 0; 
-		top: 0;
-		height: 145px;
-		width: 4px;
-	}
-	h3 {
-		font-size: 3.5rem;
-		text-transform: uppercase;
-		padding: 40px;
-		span {
-			color: $dark-pink;
-		}
-	}
-
-}
-
-.contact-content {
-	display: flex;
-}
-
-.contact-info {
-	width: 40%;
-	padding-left: 40px;
-}
-
-.contact-info_phone, .contact-info_email, .contact-info_socials{
-	display: flex;
-	font-size: 1.3rem;
-	padding-bottom: 20px;
-	padding-right: 20px;
-	.fa {
-		margin-top: 2px;
-		color: $dark-pink;
-	}
-	.email {
-		padding-left: 10px;
-	}
-	a {
-		color: $black;
-		padding: 0 10px;
-	}
-}
-
-.contact-info_socials {
-	li {
-		&:first-child a {
-			padding-left: 0;
-		}
-	}
-	
-}
-
-.contact-form {
-	display: flex; 
-	flex-direction: column;
-	width: 60%;
-	padding-right: 50px;
-	input {
-		border: none;
-		border-bottom: 1px solid $border-grey;
-		padding-bottom: 10px;
-		margin-bottom: 20px;
-		background: $light-pink;
-		&::placeholder {
-			color: $black;
-			text-transform: uppercase;
-		}
-	}
-	textarea {
-		resize: none;
-		height: 75px;
-		margin-bottom: 20px;
-		border: none;
-		border-bottom: 1px solid $border-grey;
-		background: $light-pink;
-		&::placeholder {
-			color: $black;
-			text-transform: uppercase;
-		}
-	}
-	button {
-		width: 30%;
-		align-self: flex-end;
-		background: $dark-pink;
-		border: none;
-		color: white;
-		padding: 10px 15px;
-		text-transform: uppercase;
-	}
-}
-
-@media screen and (max-width: 1170px){
 	.contact {
-		margin: 0 25px;
+		border-top: 4px solid $dark-pink;
+		position: relative;
+		padding-bottom: 100px;
+		min-width: 85%;
+		@media screen and (max-width: 1170px){
+			margin: 0 25px;
+		}
+		@media screen and (max-width: 439px) {
+			margin: 0 15px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: $dark-pink;
+			right: 0; 
+			top: 0;
+			height: 145px;
+			width: 4px;
+			@media screen and (max-width: 650px) {
+				height: 100%;
+			}
+			@media screen and (max-width: 439px) {
+				height: 80px;
+			}
+		}
+		h3 {
+			font-size: 3.5rem;
+			text-transform: uppercase;
+			padding: 40px;
+			@media screen and (max-width: 650px) {
+				font-size: 3rem;
+			}
+			@media screen and (max-width: 439px) {
+				font-size: 2.5rem;
+			}
+			span {
+				color: $dark-pink;
+			}
+		}
+		
 	}
-}
-
-@media screen and (max-width: 768px) {
 	.contact-content {
 		display: flex;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+
+		.contact-info {
+			width: 40%;
+			padding-left: 40px;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+			@media screen and (max-width: 575px) {
+				padding-right: 15px;
+				padding-left: 20px;
+			}
+
+			@media screen and (max-width: 502px) {
+				display: block;
+			}
+			.contact-info_contactLinks, .contact-info_socialLinks{
+			display: flex;
+			font-size: 1.3rem;
+			padding-bottom: 20px;
+			padding-right: 20px;
+			@media screen and (max-width: 768px) {
+				padding-right: 40px;
+				width: 100%;
+			}
+			
+		}
+		.contact-info_contactLinks, .contact-info_socialLinks {
+			a {
+				color: $black;
+				 font-size: 1.2rem;
+				&:before {
+					color: $dark-pink;
+				    display: inline-block;
+				    min-width: 21px;
+				    text-align: center;
+				    margin-right: 10px;
+				}
+				&:hover, &:focus {
+					color: $dark-pink;
+					text-decoration: none;
+					&:before {
+						color: $black;
+					};
+				}
+				&.phone::before {
+					content: '\f3cd';
+					font-weight: 900;
+				}
+				&.email::before {
+					content: '\f0e0';
+					font-weight: 400;
+				}
+				&.resume::before {
+					content: '\f15b';
+					font-weight: 400;
+				}
+				&.linkedin:before {
+					content: '\f0e1';
+					font-weight: 400;
+				}
+
+				&.github:before {
+					content: '\f09b';
+					font-weight: 400;
+					margin: 0 10px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 1.1rem;
+				padding-right: 0;
+			}
+		}
+		.contact-info_contactLinks {
+			flex-direction: column;
+			a:before {
+				font-family: 'Font Awesome 5 Free';
+			}
+		}
+		.contact-info_socialLinks {
+			a:before {
+				font-family: 'Font Awesome 5 Brands';
+			}
+		}
+		
+		
+	}
+	.contact-form {
+		display: flex; 
 		flex-direction: column;
-	}
-
-	.contact-info {
-		padding-right: 40px;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-	}
-	
-
-	.contact-info_phone, .contact-info_email, .contact-info_socials {
-		font-size: 1.1rem;
-		padding-right: 0;
-	}
-	.contact-info_socials {
-		li {
-			&:first-child a {
-				padding-left: 10px;
+		width: 60%;
+		padding-right: 50px;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		input {
+			border: none;
+			border-bottom: 1px solid $border-grey;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			background: $light-pink;
+			&::placeholder {
+				color: $black;
+				text-transform: uppercase;
+			}
+		}
+		textarea {
+			resize: none;
+			height: 75px;
+			margin-bottom: 20px;
+			border: none;
+			border-bottom: 1px solid $border-grey;
+			background: $light-pink;
+			&::placeholder {
+				color: $black;
+				text-transform: uppercase;
+			}
+		}
+		button {
+			width: 30%;
+			align-self: flex-end;
+			background: $dark-pink;
+			border: none;
+			color: white;
+			padding: 10px 15px;
+			text-transform: uppercase;
+			@media screen and (max-width: 340px) {
+				width: 35%;
 			}
 		}
 	}
-
-	.contact-form {
-		width: 100%;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-@media screen and (max-width: 650px) {
-	.contact {
-		h3{
-			font-size: 3rem;
-			padding: 20px 0 25px 20px;
-		}
-		&:before {
-			height: 100px;
-		}
-	}
-}
-@media screen and (max-width: 575px) {
 	
-	.contact-info, .contact-form {
-		padding-right: 15px;
-		padding-left: 20px;
-
-		a, .email {
-			padding: 0 10px 0 7px;
-		}
-	}
-	
-
-	.contact-info_socials {
-		
-		a {
-			padding: 0 7px;
-		}
-	}
-
-	
-	.contact-info_phone, .contact-info_email, .contact-info_socials {
-		font-size: 0.95rem;
 	}
 	
 }
-@media screen and (max-width: 502px) {
-	
-	.contact-info {
-		display: block;
-	}
-	.contact-info_socials li:first-child a{
-		padding: 0;
-	}
 
-}
-@media screen and (max-width: 439px) {
-	.contact {
-		margin: 0 15px;
-		h3 {
-			font-size: 2.5rem;
-		}
-		&:before {
-			height: 80px;
-		}
-	}
-}
 
-@media screen and (max-width: 340px) {
-	.contact-form {
-		button {
-			width: 35%;
-		}
-	}
-}
+
+
+
+
+
+
