@@ -167,6 +167,18 @@
 		p {
 			font-size: 1rem;
 		}
+		ul {
+		
+		li {
+			font-size: 0.9rem;
+			line-height: 1;
+			p, a {
+				font-size: 0.7rem;
+				font-style: italic;
+			}
+		}
+	}
+
 	}
 }
 
@@ -194,6 +206,14 @@
 		}
 		p {
 			font-size: 0.9rem;
+		}
+		li {
+			font-size: 0.8rem;
+			line-height: 1;
+			p, a {
+				font-size: 0.7rem;
+				font-style: italic;
+			}
 		}
 	}
 }
