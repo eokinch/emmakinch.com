@@ -37,6 +37,9 @@
 			@media screen and (max-width: 439px) {
 				font-size: 2.5rem;
 			}
+			@media screen and (max-width: 420px) {
+				padding: 20px;
+			}
 			span {
 				color: $dark-pink;
 			}
